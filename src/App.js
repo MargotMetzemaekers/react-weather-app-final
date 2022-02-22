@@ -6,12 +6,12 @@ function App() {
     <div className="App">
       Weather App
       <footer>
-        <a
-          href="https://flamboyant-spence-8e4da6.netlify.app/"
-          target="_blank"
-        ></a>
-      </p>
-    </footer>
+        This project was coded{" "}
+        <a href="https://flamboyant-spence-8e4da6.netlify.app/" target="_blank">
+          by Margot Metzemaekers
+        </a>
+      </footer>
+    </div>
   );
 }
 
