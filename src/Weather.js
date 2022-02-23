@@ -1,5 +1,14 @@
 import React from "react";
+import "./Weather.css";
 
 export default function Weather() {
-  return <div>Hello</div>;
+  return (
+    <div className="Weather">
+      <h1>New York</h1>
+      <ul>
+        <li>Wednesday 07:00</li>
+        <li>Cloudy</li>
+      </ul>
+    </div>
+  );
 }
