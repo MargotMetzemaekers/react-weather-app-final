@@ -10,6 +10,7 @@ export default function Weather() {
           placeholder="Enter city..."
           className="form-control"
         />
+        <input type="submit" value="Search" className="btn btn-primary" />
       </form>
       <h1>New York</h1>
       <ul>
