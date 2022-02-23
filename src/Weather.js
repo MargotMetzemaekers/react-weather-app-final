@@ -7,7 +7,7 @@ export default function Weather() {
       <h1>New York</h1>
       <ul>
         <li>Wednesday 07:00</li>
-        <li>Cloudy</li>
+        <li>Partly cloudy</li>
       </ul>
       <div className="row">
         <div className="col-6">
@@ -15,6 +15,14 @@ export default function Weather() {
             src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png"
             alt="Partly cloudy"
           ></img>
+          6 ℃
+        </div>
+        <div className="col-6">
+          <ul>
+            <li>Precipitation: 15%</li>
+            <li>Humidity: 70%</li>
+            <li>Wind: 30km/h</li>
+          </ul>
         </div>
       </div>
     </div>
