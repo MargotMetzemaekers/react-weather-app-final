@@ -4,7 +4,7 @@ import "./App.css";
 function App() {
   return (
     <div className="App">
-      Weather App
+      <h1>Weather App</h1>
       <footer>
         This project was coded{" "}
         <a href="https://flamboyant-spence-8e4da6.netlify.app/" target="_blank">
