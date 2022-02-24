@@ -12,7 +12,6 @@ export default function Weather() {
       city: response.data.name,
     });
 
-    setTemperature();
     setReady(true);
   }
 
