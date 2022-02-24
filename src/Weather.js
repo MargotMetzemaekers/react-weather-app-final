@@ -4,9 +4,15 @@ import "./Weather.css";
 
 export default function Weather() {
   const [ready, setReady] = useState(false);
-  const [temperature, setTemperature] = useState(null);
+  const [weatherData, setWeatherData] = useState({});
   function handleResponse(response) {
-    setTemperature(response.data.main.temp);
+    setWeatherData({
+      temperature: response.data.main.temp,
+      wind: 12,
+      city: response.data.name,
+    });
+
+    setTemperature();
     setReady(true);
   }
 
@@ -28,10 +34,10 @@ export default function Weather() {
             </div>
           </div>
         </form>
-        <h1>New York</h1>
+        <h1>{weatherData.city}</h1>
         <ul>
           <li>Wednesday 07:00</li>
-          <li>Partly cloudy</li>
+          <li>{weatherData.description}</li>
         </ul>
         <div className="row">
           <div className="col-6">
@@ -41,7 +47,9 @@ export default function Weather() {
               className="float-left"
             ></img>
             <div className="float-left">
-              <span className="temperature">{temperature}</span>
+              <span className="temperature">
+                {Math.round(weatherData.temperature)}
+              </span>
               <span className="unit">℃</span>
             </div>
           </div>
@@ -49,7 +57,7 @@ export default function Weather() {
             <ul>
               <li>Precipitation: 15%</li>
               <li>Humidity: 70%</li>
-              <li>Wind: 30km/h</li>
+              <li>Wind: {weatherData.wind}km/h</li>
             </ul>
           </div>
         </div>
