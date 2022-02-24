@@ -8,8 +8,10 @@ export default function Weather() {
   function handleResponse(response) {
     setWeatherData({
       temperature: response.data.main.temp,
-      wind: response.data.wind.speed,
       humidity: response.data.main.humidity,
+      description: response.data.weather[0].description,
+      iconUrl: "https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png",
+      wind: response.data.wind.speed,
       city: response.data.name,
     });
     setReady(true);
@@ -41,8 +43,8 @@ export default function Weather() {
         <div className="row">
           <div className="col-6">
             <img
-              src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png"
-              alt="Partly cloudy"
+              src={weatherData.iconUrl}
+              alt={weatherData.description}
               className="float-left"
             ></img>
             <div className="float-left">
