@@ -11,7 +11,7 @@ export default function FormattedDate(props) {
     "Saturday",
     "Sunday",
   ];
-  let day = props.date.getDate();
+  let day = days[props.date.getDay()];
   let hours = props.date.getHours();
   let minutes = props.date.getMinutes();
   return (
