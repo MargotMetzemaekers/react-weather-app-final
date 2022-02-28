@@ -5,7 +5,7 @@ export default function WeatherForecast() {
   return (
     <div className="WeatherForecast">
       <div className="row">
-        <div className="col"></div>
+        <div className="col">Thursday</div>
       </div>
     </div>
   );
