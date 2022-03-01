@@ -8,9 +8,9 @@ function App() {
       <div className="container">
         <Weather defaultCity="Rotterdam" />
         <footer>
-          This project was coded{" "}
+          This project was coded open-source on{" "}
           <a href="https://github.com/MargotMetzemaekers" target="_blank">
-            open-source on GitHub
+            GitHub{" "}
           </a>
           by Margot Metzemaekers 👩‍💻 and hosted on{" "}
           <a
