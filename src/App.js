@@ -9,11 +9,15 @@ function App() {
         <Weather defaultCity="Rotterdam" />
         <footer>
           This project was coded{" "}
+          <a href="https://github.com/MargotMetzemaekers" target="_blank">
+            open-source on GitHub
+          </a>
+          by Margot Metzemaekers 👩‍💻 and hosted on{" "}
           <a
-            href="https://flamboyant-spence-8e4da6.netlify.app/"
+            href="https://app.netlify.com/teams/margotmetzemaekers/overview"
             target="_blank"
           >
-            by Margot Metzemaekers
+            Netlify
           </a>
         </footer>
       </div>
